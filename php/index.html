@@ -10,13 +10,22 @@
 			$.ajax({
 				type:"post",
 				url:"http://localhost/php/php/test.php",
+
+				// 注册：
+				// data:{
+				// 	action : "register",
+				// 	username: "nova1",
+				// 	password: "123124"
+				// },
+
+				// 登陆：
 				data:{
 					action : "login",
 					username: "nova1",
 					password: "123124"
 				},
 				success:function(res){
-					console.log( eval(res) );
+					console.log( eval(res) );//解析返回数据
 				}
 			});
 		</script>
