@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$.ajax({
+				type:"get",
+				url:"http://localhost/php2/test.php",
+				data : {
+					pageNum : 5
+				},
+				success : function(res){
+					console.log( res );
+				}
+			});
+		</script>
+	</body>
+</html>
